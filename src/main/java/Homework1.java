@@ -6,9 +6,9 @@ public class Homework1 {
         // initializing four variables with random values
 
         int a = 3;
-        int b = 1;
+        int b = 0;
         int c = 12;
-        int d = 6;
+        int d = 7;
 
         // checking the sum of the first and second variables
 
@@ -29,7 +29,10 @@ public class Homework1 {
         int sum = sum1 + sum2;
         if (sum1 % 2 == 0 && sum2 % 2 == 0) {
             System.out.println("The sum of all variables is an even number (" + sum + ").");
+        } else {
+            System.out.println("The sum of all variables is not even number (" + sum + ").");
         }
+
     }
 }
 
