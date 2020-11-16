@@ -6,8 +6,8 @@ public class MainApp {
         john.displayUser();
 
         // method overloading
-        john.greetings(john.firstName, john.lastName);
-        john.greetings("Johnny");
+        john.greeting(john.firstName, john.lastName);
+        john.greeting("Johnny");
 
         User jenny = new User("Jenny","Comand","com@wp.pl",55);
         jenny.displayUser();

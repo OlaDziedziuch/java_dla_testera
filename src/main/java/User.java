@@ -46,11 +46,11 @@ public class User {
         }
     }
 
-    void greetings(String name) {
+    void greeting(String name) {
         System.out.println("Hello " + name + "! Nice to see you!");
     }
 
-    void greetings(String firstName, String lastName) {
+    void greeting(String firstName, String lastName) {
         System.out.println("Hello " + firstName + " "+ lastName + "! Nice to see you!");
     }
 
@@ -59,4 +59,3 @@ public class User {
     }
 
 }
-
