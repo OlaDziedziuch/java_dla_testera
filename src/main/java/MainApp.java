@@ -2,24 +2,17 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        User john = new User();
-        john.firstName = "John";
-        john.lastName = "Kowalsky";
-        john.email = "john@02.pl";
-        john.age = 17;
-        john.isAdult = false;
-        System.out.println(john.firstName);
-        john.getFullName();
+        User john = new User("John", "Kowalsky", "john@o2.pl", 17);
         john.displayUser();
 
-        User peter = new User();
-        peter.firstName = "Peter";
-        peter.lastName = "Pets";
-        peter.email = "pet@02.pl";
-        peter.age = 33;
-        peter.isAdult = true;
-        System.out.println(peter.email);
-        peter.getFullName();
+        // method overloading
+        john.greetings(john.firstName, john.lastName);
+        john.greetings("Johnny");
+
+        User jenny = new User("Jenny","Comand","com@wp.pl",55);
+        jenny.displayUser();
+
+        User peter = new User("Peter", "Pets", "pet@o2.pl", 33);
         peter.displayUser();
 
     }
