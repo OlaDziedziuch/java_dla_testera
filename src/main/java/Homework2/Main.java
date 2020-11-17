@@ -3,21 +3,23 @@ package Homework2;
 public class Main {
     public static void main(String[] args) {
 
-        Bug bug1 = new Bug("Picture is not displayed", "zya@op.pl");
-        Bug bug2 = new Bug("Typo", "abc@wp.pl");
+        Bug bug1 = new Bug("I work despite not having a coffee", "",1, "", "");
+        Bug bug2 = new Bug("I picked up important decisions on an empty stomach", "",1, "", "");
 
-        bug1.displayAllInfo();
-        bug1.displayApplicant("Maggie", "Laggie");
+        bug1.setApplicant("Christopher", "Pietruszka");
+        bug1.setMailApplicant("chris@parsley.com");
         bug1.getStatus();
-        bug1.changeStatus();
-        bug1.setPriority(3);
+        bug1.setPriority(4);
+        bug1.setStatus();
         bug1.displayAllInfo();
 
-        bug2.displayAllInfo();
-        bug2.displayApplicant("Kate", "Take");
+
+        bug2.setApplicant("Mark", "Gruszka");
+        bug2.setMailApplicant("mark@pear.com");
         bug2.getStatus();
-        bug2.setPriority(5);
+        bug2.setPriority(90);
         bug2.displayAllInfo();
+
 
     }
 
