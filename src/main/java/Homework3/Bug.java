@@ -112,6 +112,13 @@ public class Bug {
         this.lastName = lastName;
     }
 
+    double var = 1.5;
+    float var3 = 1.90000000000000f;
+    int var2 = 2;
+
+    double result = var / var3;
+
+
     public void displayAllInfo() {
         System.out.println("Description: " + description + "\n" +
                 "Applicant: " + firstName + " " + lastName + "\n" +
