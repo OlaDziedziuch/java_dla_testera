@@ -19,6 +19,16 @@ public class Bug {
         this.lastName = lastName;
     }
 
+    public Bug(String description, String email, int priority, String firstName) {
+
+        this.description = description;
+        this.email = email;
+        this.priority = priority;
+        this.status = getStatus();
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     // getters and setters
 
     public String getDescription() {
@@ -111,12 +121,6 @@ public class Bug {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
-    double var = 1.5;
-    float var3 = 1.90000000000000f;
-    int var2 = 2;
-
-    double result = var / var3;
 
 
     public void displayAllInfo() {

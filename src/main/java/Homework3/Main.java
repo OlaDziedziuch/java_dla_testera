@@ -5,7 +5,9 @@ public class Main {
 
         Bug bug1 = new Bug("I work despite not having a coffee", "", 1, "", "");
         Bug bug2 = new Bug("I picked up important decisions on an empty stomach", "", 1, "", "");
+        Bug bug3 = new Bug("", "", 1,"");
 
+        bug3.getLastName();
 
         // description validation
         System.out.println("Bug1 description contains: " + bug1.getDescription().length() + " characters.");
