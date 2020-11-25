@@ -4,7 +4,7 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        PC officeComputer = new PC("XYZ", "HP", 500, 128, true);
+        PC officeComputer = new PC("XYZ", "HP", 500, 128);
         Laptop gamingComputer = new Laptop("SZA", "HP", 500, 256, 50);
 
         officeComputer.setIsPluggedIn(false);
