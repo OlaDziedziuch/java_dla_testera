@@ -10,6 +10,15 @@ public class Tea extends Product {
         super (quantity, weight, addNote, addComment);
         this.typeOfTea = typeOfTea;
         this.tempBoiling = tempBoiling;
+    }
 
+    public int setWeight(int weight) {
+
+        if (weight == 100) {
+            this.weight = weight;
+        } else {
+            throw new IllegalArgumentException("Oooops! Wrong value!");
+        }
+        return weight;
     }
 }

@@ -50,8 +50,7 @@ public class Product {
     public int setAddNote(int addNote) throws InstantiationException {
         if (addNote > 0 && addNote <= 5) {
             this.addNote = addNote;
-        }
-        else {
+        } else {
             throw new InstantiationException("Oooops! Wrong value!");
         }
 
@@ -66,14 +65,18 @@ public class Product {
         if (addComment.length() > 100) {
             throw new IllegalArgumentException("Your opinion is too long");
         } else {
-        this.addComment = addComment;
+            this.addComment = addComment;
         }
         return addComment;
     }
 
-    public void addedToCart() { isAddedToCart = true; }
+    public boolean addedToCart() {
+        return true;
+    }
 
-    public boolean isAddedToCart() { return isAddedToCart; }
+    public boolean isAddedToCart() {
+        return isAddedToCart;
+    }
 
 }
 
