@@ -6,7 +6,7 @@ public class Accessories extends Product {
     private int tempBoiling;
 
     public Accessories(int quantity, int weight, int addNote, String addComment, boolean isAddingToCart) {
-        super (quantity, weight, addNote, addComment, isAddingToCart);
+        super (quantity, weight, addNote, addComment);
 
     }
 }

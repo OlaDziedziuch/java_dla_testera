@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Coffee Audun = new Coffee(true,50,50,5,"nvjdfskvbsvfvndisfkvbdvbkdsfbvhkdsdjkjdsvkd jdsv bjsv bjskvb jksvb jhksdv bhjkdsv jsdvjksdbvfjhsdvb fsvbdjkvbjakvbhjkabv hjslj","dark roast",
+        Coffee Audun = new Coffee(6,50,1,"Comment is here","dark",
                 "aeropress");
 
         //System.out.println(Audun.getQuantity());
@@ -13,7 +13,7 @@ public class Main {
         ///System.out.println(Audun.quantity);
 
         System.out.println(Audun.getQuantity());
-        System.out.println(Audun.setQuantity(100));
+        System.out.println(Audun.setQuantity(101));
         System.out.println(Audun.setAddComment("vfuvbfdbvuhdfbvufdabvukdfavbuvbshvfuallllllllll"));
 
 

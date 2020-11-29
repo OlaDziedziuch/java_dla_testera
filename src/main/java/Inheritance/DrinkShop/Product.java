@@ -8,7 +8,7 @@ public class Product {
     protected String addComment;
     protected boolean isAddedToCart;
 
-    public Product(int quantity, int weight, int addNote, String addComment, boolean isAddingToCart) {
+    public Product(int quantity, int weight, int addNote, String addComment) {
         this.quantity = quantity;
         this.weight = weight;
         this.addNote = addNote;
