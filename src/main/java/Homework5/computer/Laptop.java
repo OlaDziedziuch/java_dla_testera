@@ -24,4 +24,9 @@ public class Laptop extends Computer {
     public void setBatteryLevel(int newBatteryLevel) {
         batteryLevel = newBatteryLevel;
     }
+
+    public int getBatteryLevel() {
+        return batteryLevel;
+    }
 }
+

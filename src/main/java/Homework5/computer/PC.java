@@ -24,5 +24,9 @@ public class PC extends Computer {
     public void setIsPluggedIn(boolean newIsPluggedIn) {
         isPluggedIn = newIsPluggedIn;
     }
+
+    public boolean getIsPluggedIn() {
+        return isPluggedIn;
+    }
 }
 
