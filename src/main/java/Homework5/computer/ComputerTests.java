@@ -1,6 +1,7 @@
 package Homework5.computer;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ComputerTests {
@@ -14,6 +15,8 @@ public class ComputerTests {
         }
     }
 
+
+
     @Test
     void shouldPCBeSwitchedOff() {
         PC officePC = new PC("XYZ", "HP", 500, 128);
@@ -23,6 +26,8 @@ public class ComputerTests {
             assertEquals(false, isPluggedIn);
         }
     }
+
+
 
     @Test
     void shouldLaptopBeSwitchedOn() {
