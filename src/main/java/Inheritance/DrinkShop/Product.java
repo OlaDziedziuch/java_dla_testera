@@ -1,6 +1,6 @@
 package Inheritance.DrinkShop;
 
-public class Product {
+abstract public class Product {
 
     protected int quantity;
     protected int weight;

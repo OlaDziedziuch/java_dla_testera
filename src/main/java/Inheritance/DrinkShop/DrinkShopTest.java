@@ -9,7 +9,7 @@ public class DrinkShopTest {
     @Test
     // positive (+)
     public void shouldBeCoffeeAddedToCart() {
-        Coffee Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
+        Product Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
                 "aeropress");
         {
             boolean actualStatus = Audun.isAddedToCart();
@@ -21,7 +21,7 @@ public class DrinkShopTest {
     @Test
     // positive (+)
     public void shouldBeCoffeeGet20Quantity() {
-        Coffee Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
+        Product Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
                 "aeropress");
         {
             Audun.setQuantity(20);
@@ -36,7 +36,7 @@ public class DrinkShopTest {
     public void shouldBeCoffeeGetOver20QuantityAndDisplayErrorMessage() {
 
         try {
-            Coffee Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
+            Product Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
                     "aeropress");
         } catch (IllegalArgumentException exception) {
             assertEquals("Oooops! Wrong value!", exception.getMessage());
@@ -49,7 +49,7 @@ public class DrinkShopTest {
     public void shouldBeCoffeeGetNegativeQuantityAndDisplayErrorMessage() {
 
         try {
-            Coffee Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
+            Product Audun = new Coffee(6, 50, 1, "Comment is here", "dark",
                     "aeropress");
         } catch (IllegalArgumentException exception) {
             assertEquals("Oooops! Wrong value!", exception.getMessage());
