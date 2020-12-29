@@ -6,10 +6,10 @@ public class Main {
         BugReporter tester = new BugReporter("Adam", "Pietruszka", "adam@wp.pl");
 
         Bug bug1 = new Bug("I work despite not having a coffee", 1, tester);
-        System.out.println(bug1);
+        System.out.println(bug1.toString());
 
-
-
+        bug1.setStatus(false);
+        bug1.setStatus(true);
 
     }
 

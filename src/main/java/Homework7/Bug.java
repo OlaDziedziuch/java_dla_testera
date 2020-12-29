@@ -67,11 +67,18 @@ public class Bug implements ConsoleNotification {
         return true;
     }
 
-    public void setStatus() {
+    public void setStatus(boolean status) {
+        notifyStatusChange();
         this.status = false;
-        System.out.println("The status has been changed. Actual status is closed.");
     }
 
+    public Homework7.BugReporter getBugReporter() {
+        return BugReporter;
+    }
+
+    public void setBugReporter(Homework7.BugReporter bugReporter) {
+        BugReporter = bugReporter;
+    }
 
     public void displayAllInfo()  {
         System.out.println("Description: " + description + "\n" +
@@ -81,7 +88,7 @@ public class Bug implements ConsoleNotification {
     }
 
     public void notifyStatusChange() {
-        System.out.println("Tam dam");
+        System.out.println("Status has been changed");
     }
 
     @Override

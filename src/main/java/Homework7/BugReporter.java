@@ -14,6 +14,35 @@ public class BugReporter {
         this.email = email;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        if (email.contains("@")) {
+            this.email = email;
+        } else {
+            System.out.println("E-mail address must contain '@'.");
+        }
+    }
+
+
     @Override
     public String toString() {
         return "BugReporter{" +
@@ -36,13 +65,6 @@ public class BugReporter {
         return Objects.hash(firstName, lastName, email);
     }
 
-    public void setEmail(String email) {
-        if (email.contains("@")) {
-            this.email = email;
-        } else {
-            System.out.println("E-mail address must contain '@'.");
-        }
-    }
 
 
 }
