@@ -1,4 +1,5 @@
-package Homework5.computer;
+package Homework5;
+
 
 public class Laptop extends Computer {
 

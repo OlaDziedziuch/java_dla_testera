@@ -1,10 +1,17 @@
 package Homework6;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ComputerTest {
+
+    @BeforeAll
+    void setUp() {
+        Computer officePC = new PC("XYZ", "HP", 500, 128);
+        Computer gamingComputer = new Laptop("SZA", "HP", 500, 256, 50);
+    }
 
     @Test
     void shouldPCBeSwitchedOn() {
