@@ -1,6 +1,6 @@
 package Homework7;
 
-public class Bug implements ConsoleNotification {
+public class Bug implements ConsoleNotification, EmailNotification {
 
     private String description;
     private int priority;
@@ -69,6 +69,7 @@ public class Bug implements ConsoleNotification {
 
     public void setStatus(boolean status) {
         notifyStatusChange();
+        sendEmailAfterStatusChange();
         this.status = false;
     }
 
@@ -80,7 +81,7 @@ public class Bug implements ConsoleNotification {
         BugReporter = bugReporter;
     }
 
-    public void displayAllInfo()  {
+    public void displayAllInfo() {
         System.out.println("Description: " + description + "\n" +
                 "Bug Reporter: " + BugReporter.toString() +
                 "Is the status open? - " + status + "\n");
@@ -99,6 +100,11 @@ public class Bug implements ConsoleNotification {
                 ", status=" + status +
                 ", BugReporter=" + BugReporter +
                 '}';
+    }
+
+    @Override
+    public void sendEmailAfterStatusChange() {
+        System.out.println("Status has been changed");
     }
 }
 
