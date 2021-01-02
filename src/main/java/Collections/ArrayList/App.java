@@ -1,15 +1,18 @@
-package Collections;
+package Collections.ArrayList;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class App {
 
     public static void main(String[] args) {
 
-        ArrayList <String> namesTitanic = new ArrayList<>();
-        ArrayList <String> namesTarzan = new ArrayList<>();
+        // polimorfizm - odwołuje się do referencji najwyższego typu - List, not ArrayList
+
+        List<String> namesTitanic = new ArrayList<>();
+        List <String> namesTarzan = new LinkedList<>();
 
         namesTitanic.add("Jack");
         namesTitanic.add("Rose");
@@ -43,6 +46,8 @@ public class App {
         //System.out.println(namesTarzan);
 
         Collections.sort(namesTarzan);
+        System.out.println(namesTarzan);
+        Collections.reverse(namesTarzan);
         System.out.println(namesTarzan);
     }
 
