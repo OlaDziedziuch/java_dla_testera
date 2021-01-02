@@ -21,6 +21,19 @@ public class Bug implements ConsoleNotification, EmailNotification, Comparable<B
 
     // getters and setters
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if (id <= 0) {
+            System.out.println("Bad value");
+        } else {
+            this.id = id;
+        }
+    }
+
     public String getDescription() {
         return description;
     }
