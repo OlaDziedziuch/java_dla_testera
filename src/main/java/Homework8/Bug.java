@@ -8,19 +8,18 @@ public class Bug implements ConsoleNotification, EmailNotification, Comparable<B
     private String description;
     private int priority;
     private boolean status;
-    private BugReporter BugReporter;
+    private BugReporter bugReporter;
 
-    public Bug(int id, String description, int priority, BugReporter BugReporter) {
+    public Bug(int id, String description, int priority, BugReporter bugReporter) {
 
         this.id = id;
         this.description = description;
         this.priority = priority;
-        this.status = getStatus();
-        this.BugReporter = BugReporter;
+        this.status = true;
+        this.bugReporter = bugReporter;
     }
 
     // getters and setters
-
 
     public int getId() {
         return id;
@@ -80,26 +79,26 @@ public class Bug implements ConsoleNotification, EmailNotification, Comparable<B
     }
 
     public boolean getStatus() {
-        return true;
+        return status;
     }
 
     public void setStatus(boolean status) {
         notifyStatusChange();
         sendEmailAfterStatusChange();
-        this.status = false;
+        this.status = status;
     }
 
     public Homework8.BugReporter getBugReporter() {
-        return BugReporter;
+        return bugReporter;
     }
 
-    public void setBugReporter(Homework8.BugReporter bugReporter) {
-        BugReporter = bugReporter;
+    public void setBugReporter(BugReporter bugReporter) {
+        this.bugReporter = bugReporter;
     }
 
     public void displayAllInfo() {
         System.out.println("Description: " + description + "\n" +
-                "Bug Reporter: " + BugReporter.toString() +
+                "Bug Reporter: " + bugReporter.toString() +
                 "Is the status open? - " + status + "\n");
 
     }
@@ -115,7 +114,7 @@ public class Bug implements ConsoleNotification, EmailNotification, Comparable<B
                 "description='" + description + '\'' +
                 ", priority=" + priority +
                 ", status=" + status +
-                ", BugReporter=" + BugReporter +
+                ", BugReporter=" + bugReporter +
                 '}';
     }
 
@@ -124,12 +123,12 @@ public class Bug implements ConsoleNotification, EmailNotification, Comparable<B
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bug bug = (Bug) o;
-        return id == bug.id && priority == bug.priority && status == bug.status && Objects.equals(description, bug.description) && Objects.equals(BugReporter, bug.BugReporter);
+        return id == bug.id && priority == bug.priority && status == bug.status && Objects.equals(description, bug.description) && Objects.equals(bugReporter, bug.bugReporter);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, description, priority, status, BugReporter);
+        return Objects.hash(id, description, priority, status, bugReporter);
     }
 
     @Override

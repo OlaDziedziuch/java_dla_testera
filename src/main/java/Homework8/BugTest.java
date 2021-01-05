@@ -1,15 +1,15 @@
 package Homework8;
 
 import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class Test {
+public class BugTest {
 
     @org.junit.Test
-    public void positiveEmailValidation() {
+    public void shouldNotAllowToSendInvalidEmail() {
         BugReporter tester = new BugReporter("Adam", "Pietruszka", "adam@wp.pl");
+        tester.setEmail("bad.mail.pl");
         {
             tester.getEmail();
             assertEquals("adam@wp.pl", tester.getEmail());
@@ -18,8 +18,10 @@ public class Test {
     }
 
     @org.junit.Test
-    public void shouldIDBeAPositiveNumber() {
+    public void shouldNotAllowToSetPositiveId() {
         Bug bug = new Bug(1, "xyz", 1, new BugReporter("Adam", "Pieta", "awa@.wp.pl"));
+        bug.setId(1);
+
         {
             bug.getId();
             assertEquals(1, bug.getId());
@@ -27,8 +29,9 @@ public class Test {
     }
 
     @org.junit.Test
-    public void shouldIDBeNotAPositiveNumber() {
+    public void shouldAllowToSetNegativeId() {
         Bug bug = new Bug(1, "xyz", -1, new BugReporter("Adam", "Pieta", "awa@.wp.pl"));
+        bug.setId(-1);
         {
             bug.getId();
             assertNotEquals(-1, bug.getId());
@@ -36,11 +39,13 @@ public class Test {
     }
 
     @org.junit.Test
-    public void shouldNotifyStatusChange() {
+    public void shouldAllowToSendNotifyStatusChange() {
         Bug bug = new Bug(1, "xyz", 1, new BugReporter("Adam", "Pieta", "awa@.wp.pl"));
+
+        bug.setStatus(true);
         {
             bug.getStatus();
-            assertTrue("Status has been changed", bug.getStatus());
+            assertEquals(true, bug.getStatus());
         }
     }
 
