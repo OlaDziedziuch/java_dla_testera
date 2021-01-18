@@ -1,4 +1,4 @@
-package Collections.SetWithObjects;
+package Optional;
 
 import java.util.Objects;
 
@@ -9,7 +9,7 @@ public class User implements Comparable<User> {
     String email;
     int age;
 
-    public User(String firstName, String lastName, String email, int age) {
+    User(String firstName, String lastName, String email, int age) {
         System.out.println(firstName + " " + lastName + " " + email + " " + age);
 
         this.firstName = firstName;
@@ -65,5 +65,4 @@ public class User implements Comparable<User> {
         }
         return compareResult;
     }
-
 }
