@@ -13,35 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af145ef1-0086-4354-aa12-1e354ab99353" name="Default Changelist" comment="Tests are updated.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Factorial/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Factorial/Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/CPU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/ComputerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/HDD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/PC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/RAM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework9/Video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Optional/FilterAndMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Optional/MatchMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Optional/OptionalDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Optional/SortedStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Optional/User.java" afterDir="false" />
+    <list default="true" id="af145ef1-0086-4354-aa12-1e354ab99353" name="Default Changelist" comment="Stream and test are updated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Collections/SetWithObjects/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Collections/SetWithObjects/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/Computer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/ComputerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/Laptop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/MainApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/Music.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/PC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Interface/Video.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homework9/ComputerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework9/ComputerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +87,7 @@
       <command value="// check if the sum of the third and fourth variables is an even number" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainApp">
+  <component name="RunManager" selected="JUnit.ComputerTest.shouldDisplayComputersNameWithHDDCapacityAbove250">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework9.MainApp" />
       <module name="java_dla_testera" />
@@ -158,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComputerTest.shouldDisplayComputerWithTheHighestRAM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComputerTest.shouldDisplayComputersNameWithHDDCapacityAbove250" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_dla_testera" />
       <extension name="coverage">
         <pattern>
@@ -168,7 +142,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Homework9" />
       <option name="MAIN_CLASS_NAME" value="Homework9.ComputerTest" />
-      <option name="METHOD_NAME" value="shouldDisplayComputerWithTheHighestRAM" />
+      <option name="METHOD_NAME" value="shouldDisplayComputersNameWithHDDCapacityAbove250" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComputerTest.shouldDisplayComputersNameWithHDDCapacityAbove250" />
+        <item itemvalue="JUnit.ComputerTest" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="JUnit.ComputerTest.shouldDisplayCorrectlyMaxValueOfRAMCapadcity" />
-        <item itemvalue="JUnit.ComputerTest" />
         <item itemvalue="JUnit.ComputerTest.shouldDisplayComputerWithTheHighestCPUClockSpeed" />
-        <item itemvalue="JUnit.ComputerTest.shouldDisplayComputerWithTheHighestRAM" />
       </list>
     </recent_temporary>
   </component>
@@ -419,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609855650909</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Stream and test are updated.">
+      <created>1611009986638</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611009986638</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -455,7 +436,8 @@
     <MESSAGE value="Homework from collections is added" />
     <MESSAGE value="Test for collections homework are added." />
     <MESSAGE value="Tests are updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests are updated." />
+    <MESSAGE value="Stream and test are updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stream and test are updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -547,6 +529,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Homework9/ComputerTest.java</url>
+          <line>169</line>
+          <properties class="Homework9.ComputerTest" method="shouldDisplayComputersNameWithHDDCapacityAbove250">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Homework4/Sort/Sort.java</url>

@@ -176,11 +176,10 @@ public class ComputerTest {
                 .ifPresent(computer -> System.out.println(computer.getName()));
 
 
-        String expectedOutput = "Amiga";
-        String expectedOutput1 = "Atari";
-        String methodOutput = String.valueOf(computers.get(2).getName());
+        String expectedOutput = "Atari";
+        String methodOutput = String.valueOf(computers.get(3).getName());
 
-        assert methodOutput.equals(expectedOutput) || methodOutput.equals(expectedOutput1);
+        assertEquals(methodOutput, expectedOutput);
     }
 
     @Test
