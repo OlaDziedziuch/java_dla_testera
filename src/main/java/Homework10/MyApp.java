@@ -2,7 +2,6 @@ package Homework10;
 
 import Enums.Gender;
 import Homework8.BugReporter;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +38,8 @@ public class MyApp {
                     + " " + woman.getEmail() + " " + woman.getAge() + " " + woman.getGender());
         }
 
-        /*// Homework10/EXCEPTIONS - file 'names.txt' is created
+        // Homework10/EXCEPTIONS - file 'names.txt' is created
         // Buffered is commented, because in every running the file is overwrite
-
-         */
 
         Writer out;
         BufferedWriter names = new BufferedWriter(new FileWriter("names.txt"));

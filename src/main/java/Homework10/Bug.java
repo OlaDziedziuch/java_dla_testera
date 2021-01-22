@@ -6,7 +6,6 @@ import Homework8.EmailNotification;
 import MyOwnExceptions.IllegalDescriptionException;
 import MyOwnExceptions.IllegalIdException;
 import MyOwnExceptions.IllegalPriorityException;
-
 import java.util.Objects;
 
 public class Bug implements ConsoleNotification, EmailNotification, Comparable<Bug> {
