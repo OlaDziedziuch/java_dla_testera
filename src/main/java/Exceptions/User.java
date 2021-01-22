@@ -1,4 +1,4 @@
-package Homework9;
+package Exceptions;
 
 public class User {
 
@@ -14,7 +14,7 @@ public class User {
         return userCounter;
     }
 
-    public User(String firstName, String lastName, String email, int age, boolean isAdult) {
+    User(String firstName, String lastName, String email, int age, boolean isAdult) {
 
         this.firstName = firstName;
         this.lastName = lastName;
@@ -65,4 +65,47 @@ public class User {
         return age + 10;
     }
 
+    public static void setUserCounter(int userCounter) {
+        User.userCounter = userCounter;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isAdult() {
+        return isAdult;
+    }
+
+    public void setAdult(boolean adult) {
+        isAdult = adult;
+    }
 }

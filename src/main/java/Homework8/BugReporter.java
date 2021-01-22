@@ -1,5 +1,7 @@
 package Homework8;
 
+import MyOwnExceptions.IllegalEmailFormatException;
+
 import java.util.Objects;
 
 public class BugReporter {
@@ -34,11 +36,11 @@ public class BugReporter {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email) throws IllegalEmailFormatException {
         if (email.contains("@")) {
             this.email = email;
         } else {
-            System.out.println("E-mail address must contain '@'.");
+            throw new IllegalEmailFormatException("Incorrect e-mail address format");
         }
     }
 
