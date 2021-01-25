@@ -14,25 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af145ef1-0086-4354-aa12-1e354ab99353" name="Default Changelist" comment="Homework 10 - Exceptions are updated.">
-      <change afterPath="$PROJECT_DIR$/names.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enums/WeekDays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/WeekUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework10/Bug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework10/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Homework10/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyOwnExceptions/IllegalDescriptionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyOwnExceptions/IllegalEmailFormatException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyOwnExceptions/IllegalIdException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyOwnExceptions/IllegalPriorityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework8/BugReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework8/BugReporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework9/PC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework9/PC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Homework9/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework9/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="homework9" />
+        <entry key="$PROJECT_DIR$" value="homework10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -430,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611354838970</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Homework 10 - Exceptions are updated.">
+      <created>1611354981631</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1611354981631</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -4,7 +4,7 @@ public enum Gender {
 
     //Homework10 -  1. new enum is created
 
-    Man("M"), Woman("F");
+    MAN("M"), WOMAN("F");
 
     private String gender;
 

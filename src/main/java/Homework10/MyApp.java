@@ -15,15 +15,15 @@ public class MyApp {
 
         List<User> testers = new ArrayList();
 
-        testers.add(new User("Cinderella", "WithoutShoe", "email@wp.pl", 53, true, Gender.Woman));
-        testers.add(new User("Alice", "InWonderland", "email@wp.pl", 33, true, Gender.Woman));
-        testers.add(new User("Pinocchio", "FromGepetto", "email@wp.pl", 23, true, Gender.Man));
-        testers.add(new User("Snow", "White", "email@wp.pl", 43, true, Gender.Woman));
-        testers.add(new User("King", "Arthur", "email@wp.pl", 63, true, Gender.Man));
-        testers.add(new User("Bella", "Beauty", "email@wp.pl", 83, true, Gender.Woman));
-        testers.add(new User("Buzz", "Astral", "email@wp.pl", 93, true, Gender.Man));
-        testers.add(new User("Pocahontas", "Smith", "email@wp.pl", 43, true, Gender.Woman));
-        testers.add(new User("Jane", "Porter", "email@wp.pl", 53, true, Gender.Woman));
+        testers.add(new User("Cinderella", "WithoutShoe", "email@wp.pl", 53, true, Gender.WOMAN));
+        testers.add(new User("Alice", "InWonderland", "email@wp.pl", 33, true, Gender.WOMAN));
+        testers.add(new User("Pinocchio", "FromGepetto", "email@wp.pl", 23, true, Gender.MAN));
+        testers.add(new User("Snow", "White", "email@wp.pl", 43, true, Gender.WOMAN));
+        testers.add(new User("King", "Arthur", "email@wp.pl", 63, true, Gender.MAN));
+        testers.add(new User("Bella", "Beauty", "email@wp.pl", 83, true, Gender.WOMAN));
+        testers.add(new User("Buzz", "Astral", "email@wp.pl", 93, true, Gender.MAN));
+        testers.add(new User("Pocahontas", "Smith", "email@wp.pl", 43, true, Gender.WOMAN));
+        testers.add(new User("Jane", "Porter", "email@wp.pl", 53, true, Gender.WOMAN));
 
 
         // Homework10 - 5. only filtered users
@@ -32,8 +32,7 @@ public class MyApp {
                 .filter(woman -> woman.getGender().getGender().equals("F"))
                 .collect(Collectors.toList());
 
-        for (User woman : womanTesters
-        ) {
+        for (User woman : womanTesters) {
             System.out.println(woman.getFirstName() + " " + woman.getLastName()
                     + " " + woman.getEmail() + " " + woman.getAge() + " " + woman.getGender());
         }
@@ -41,18 +40,17 @@ public class MyApp {
         // Homework10/EXCEPTIONS - file 'names.txt' is created
         // Buffered is commented, because in every running the file is overwrite
 
-        Writer out;
-        BufferedWriter names = new BufferedWriter(new FileWriter("names.txt"));
+        String file = "names.txt";
+
+        BufferedWriter names = new BufferedWriter(new FileWriter(file));
 
         // Homework10/EXCEPTIONS - file is converted to list
-
-        File file;
 
         BufferedReader in = null;
         List<String> checkedNames = new ArrayList<String>();
 
         try {
-            in = new BufferedReader(new FileReader("names.txt"));
+            in = new BufferedReader(new FileReader(file));
             String str;
             while ((str = in.readLine()) != null) {
                 checkedNames.add(str);
@@ -67,8 +65,7 @@ public class MyApp {
             }
         }
 
-        for (String checkedName : checkedNames
-        ) {
+        for (String checkedName : checkedNames) {
             System.out.println(checkedName);
         }
 
